@@ -16,6 +16,7 @@ Pod::Spec.new do |s|
   s.author           = { "Billy Lee" => "lchb1988@gmail.com" }
   s.source           = { :git => "https://github.com/Billy1988/ios-byteBuffer.git", :tag => s.version.to_s }
 
+  s.platform     = :ios, '7.0'
   s.requires_arc = true
   s.source_files = 'Classes/*'
 end
