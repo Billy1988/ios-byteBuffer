@@ -9,7 +9,7 @@
 
 Pod::Spec.new do |s|
   s.name             = "ios-byteBuffer"
-  s.version          = "0.1.0"
+  s.version          = "0.2"
   s.summary          = "A class re-write in objective-c"
   s.homepage         = "https://github.com/Billy1988/ios-byteBuffer"
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
@@ -17,5 +17,5 @@ Pod::Spec.new do |s|
   s.source           = { :git => "https://github.com/Billy1988/ios-byteBuffer.git", :tag => s.version.to_s }
 
   s.requires_arc = true
-  s.source_files = 'Pod/Classes/**/*'
+  s.source_files = 'Classes/*'
 end
