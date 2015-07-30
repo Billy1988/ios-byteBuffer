@@ -7,10 +7,37 @@
 
 ## Usage
 
-To run the example project, clone the repo, and run `pod install` from the Example directory first.
+#allocation
+```objective-c
+ByteBuffer *buffer = [ByteBuffer initWithOrder:ByteOrderLittleEndian];
+```
+#input data
+```objective-c
+- (void)put:(Byte)b;
+
+- (void)putByteBuffer:(ByteBuffer*)bb;
+
+- (void)putData:(NSData*)data;
+
+- (void)putShort:(short)d;
+
+- (void)putFloat:(float)f;
+
+- (void)putInt:(int)i;
+```
+#output
+```objective-c
+- (Byte)get:(int)index;
+
+- (float)getFloat:(int)index;
+
+- (int)getInt:(int)index;
+
+- (NSData*)convertNSData;
+```
 
 ## Requirements
-
+iOS platform, objective-c
 ## Installation
 
 ios-byteBuffer is available through [CocoaPods](http://cocoapods.org). To install
@@ -22,7 +49,7 @@ pod "ios-byteBuffer"
 
 ## Author
 
-Billy Lee, billy.lee@swiftcam.com
+Billy Lee, lchb1988@gmail.com
 
 ## License
 
